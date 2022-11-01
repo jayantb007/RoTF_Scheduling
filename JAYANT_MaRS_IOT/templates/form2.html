@@ -1,0 +1,29 @@
+<table border=1>
+    <tr>
+        <th width="100">Order No.</th>
+        <th width="100">Table No.</th>
+        <th width="100">Order ID</th>
+        <th width="100">Order Name</th>
+        <th width="200">Order Time</th>
+        <th width="100">Brewing Time</th>
+        <th width="200">Prepared Time</th>
+    </tr>
+    {%for user in userdetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td>{{user[4]}}</td>
+        <td>{{user[5]}}</td>
+        <td>{{user[6]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br><br>
+<form method="POST" action="">
+    ORDER NO.  <input type="number" name="order_no"/>
+    <br>
+    <input type="submit">
+</form>

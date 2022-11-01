@@ -1,0 +1,15 @@
+<h1>INDEX FILE</h1>
+<h1>DATA</h1>
+
+{%for stuff in data%}
+    {{stuff}}<br>
+
+    {% if stuff==2 %}
+        {{stuff+20}}
+    {% else%} 
+        {{stuff}}   
+    {%endif%}
+    {% endfor %}
+<br>
+{{data[0]}}
+{{data.2+10}}
